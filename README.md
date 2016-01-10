@@ -1,2 +1,4 @@
-# 256clone
-A 2048 clone
+# 256! A 2048 Clone.
+
+## Learning Competencies
+
