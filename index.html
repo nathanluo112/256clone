@@ -16,8 +16,12 @@
 </head>
 <body>
   <div ng-controller="gameController">
-    <div>{{something}}</div>
     <div sample-dir></div>
+    <ul>
+      <li ng-repeat="row in gameRows">{{row}}</li>
+    </ul>
+
+    <button ng-click="newGame()">New Game</button>
   </div>
 
 </body>
