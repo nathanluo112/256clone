@@ -1,4 +1,5 @@
-app.factory('gameService', function(){
+app.factory('gameService', ['boardService', function(boardService){
+
   var arr = [];
   var rowRep = [];
   var colRep = [];
@@ -21,7 +22,7 @@ app.factory('gameService', function(){
   function randomInsert(arr){
     var digit = {
       index: getRandomIndex(arr),
-      value: getTwoOrFour(4)
+      value: getTwoOrFour(20)
     };
     arr[digit.index] = digit.value;
   }
@@ -132,4 +133,4 @@ app.factory('gameService', function(){
       return rowRep;
     }
   };
-})
+}])

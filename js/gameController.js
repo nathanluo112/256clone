@@ -1,5 +1,5 @@
 app.controller('gameController', ['$scope', 'boardService', 'gameService', function($scope, boardService, gameService){
-  // $scope.board = boardService.initBoard();
+
   $scope.gameRows = gameService.initGame();
   $scope.newGame = function(){
     $scope.gameRows = gameService.initGame();
@@ -25,4 +25,5 @@ app.controller('gameController', ['$scope', 'boardService', 'gameService', funct
       $scope.gameRows = gameService.move("right");
     });
   });
+
 }])
