@@ -1,7 +1,7 @@
-app.factory('boardService', function(){
+app.factory('boardService', function($compile){
   return {
-    initBoard: function(){
-
+    addSampleDir: function(){
+      angular.element('body').append($compile("<div sample-dir></div>")(scope));
     }
   }
 })
